@@ -1,4 +1,4 @@
-package org.example;
+package org.usuario;
 
 public class UsuarioPremium extends Usuario
 {
@@ -17,6 +17,7 @@ public class UsuarioPremium extends Usuario
         System.out.println(getNome() + " baixou: " + conteudo);
   }
 }
+
 
 
 
