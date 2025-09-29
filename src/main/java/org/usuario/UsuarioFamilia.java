@@ -1,6 +1,8 @@
 package org.example;
 
-public class UsuarioFamilia extends Usuario{
+import org.usuario.Usuario;
+
+public class UsuarioFamilia extends Usuario {
     private int numeroMembros;
 
     public UsuarioFamilia(int id, String nome, String email, int numeroMembros) {

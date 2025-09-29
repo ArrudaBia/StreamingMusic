@@ -6,7 +6,7 @@ public class Podcast extends Conteudo {
     private Apresentador apresentador;
     private int episodios;
 
-    public Podcast(int id, String titulo, int duracao, Apresentador apresentador, int episodios) {
+    public Podcast(int id, String titulo, double duracao, Apresentador apresentador, int episodios) {
         super(id, titulo, duracao);
         this.apresentador = apresentador;
         this.episodios = episodios;
@@ -16,10 +16,15 @@ public class Podcast extends Conteudo {
         System.out.println("Reproduzindo podcast: " + titulo + " | Apresentador: " + apresentador.getNome());
     }
 
+    public void ouvir() {
+        System.out.println("Reproduzindo podcast: " + titulo + " | Apresentador: " + apresentador.getNome());
+    }
+
     public Apresentador getApresentador(){
         return apresentador;
     }
     public int getEpisodios(){
+
         return episodios;
     }
 }

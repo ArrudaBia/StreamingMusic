@@ -1,7 +1,12 @@
-package org;
+package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
+import org.conteudos.Audiobook;
+import org.conteudos.Musica;
+import org.conteudos.Podcast;
+import org.iniciais.*;
+import org.usuario.*;
+
 public class Main {
     public static void main(String[] args) throws Exception {
         System.out.println("Iniciando aplicativo de streaming de áudio");
@@ -9,7 +14,7 @@ public class Main {
         // Criando usuários
         UsuarioGratuito usuarioGratuito = new UsuarioGratuito(1, "João", "joao@email.com", true);
         UsuarioPremium usuarioPremium = new UsuarioPremium(2, "Maria", "maria@email.com", 19.90);
-        UsuarioFamilia usuarioFamilia = new UsuarioFamilia(3, "Família Silva", "familia@email.com", 4);
+        org.example.UsuarioFamilia usuarioFamilia = new org.example.UsuarioFamilia(3, "Família Silva", "familia@email.com", 4);
 
         // Criando artistas, narradores e apresentadores
         Artista artista = new Artista(4, "Roberto Carlos", "roberto@email.com", "MPB");

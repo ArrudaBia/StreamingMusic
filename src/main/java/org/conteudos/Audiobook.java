@@ -6,7 +6,7 @@ public class Audiobook extends Conteudo {
     private Narrador autor;
     private int capitulos;
 
-    public Audiobook(int id, String titulo, int duracao, Narrador autor, int capitulos) {
+    public Audiobook(int id, String titulo, double duracao, Narrador autor, int capitulos) {
         super(id, titulo, duracao);
         this.autor = autor;
         this.capitulos = capitulos;
