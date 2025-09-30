@@ -12,14 +12,14 @@ public class Main {
         System.out.println("Iniciando aplicativo de streaming de áudio");
 
         // Criando usuários
-        UsuarioGratuito usuarioGratuito = new UsuarioGratuito(1, "João", "joao@email.com", true);
-        UsuarioPremium usuarioPremium = new UsuarioPremium(2, "Maria", "maria@email.com", 19.90);
-        org.example.UsuarioFamilia usuarioFamilia = new org.example.UsuarioFamilia(3, "Família Silva", "familia@email.com", 4);
+        UsuarioGratuito usuarioGratuito = new UsuarioGratuito(1, "Tiago", "tiago@email.com", true);
+        UsuarioPremium usuarioPremium = new UsuarioPremium(2, "Harry", "harry@email.com", 19.90);
+        org.example.UsuarioFamilia usuarioFamilia = new org.example.UsuarioFamilia(3, "Família Mendes", "familia.m@email.com", 4);
 
         // Criando artistas, narradores e apresentadores
-        Artista artista = new Artista(4, "Roberto Carlos", "roberto@email.com", "MPB");
-        Narrador narrador = new Narrador(5, "Carlos Alberto", "carlos@email.com", "Dramático");
-        Apresentador apresentador = new Apresentador(6, "Ana Paula", "ana@email.com", "Tech Talk");
+        Artista artista = new Artista(4, "Louis Tomlinson", "louis@email.com", "Pop rock");
+        Narrador narrador = new Narrador(5, "Luiz Ramos", "luiz@email.com", "Dramático");
+        Apresentador apresentador = new Apresentador(6, "Tata Estaniecki", "tata@email.com", "Pod Delas");
 
         // Exibindo informações dos usuários
         System.out.println("\n--- Informações dos Usuários ---");
@@ -31,13 +31,14 @@ public class Main {
         apresentador.exibirInfo();
 
         // Criando álbuns
-        Album album1 = new Album("Grandes Sucessos", 2022);
-        Album album2 = new Album("Novidades", 2023);
+        Album album1 = new Album("Walls", 2020);
+        Album album2 = new Album("Faith in the Future", 2022);
+
 
         // Criando conteúdos
-        Musica musica = new Musica(1, "Emoções", 4.5, artista, album1);
-        Podcast podcast = new Podcast(2, "Tecnologia Hoje", 45.0, apresentador, 10);
-        Audiobook audiobook = new Audiobook(3, "O Poder do Hábito", 360.0, narrador, 12);
+        Musica musica = new Musica(1, "Always You", 4.5, artista, album1);
+        Podcast podcast = new Podcast(2, "Papo de mãe", 45.0, apresentador, 10);
+        Audiobook audiobook = new Audiobook(3, "As dores do amor", 360.0, narrador, 12);
 
         // Adicionando músicas ao álbum2
         album2.addMusica("Lançamento 1");
@@ -59,7 +60,7 @@ public class Main {
 
         // Adicionando músicas ao álbum
         album1.addMusica("Detalhes");
-        album1.addMusica("Como é grande o meu amor por você");
+        album1.addMusica("Miss you");
 
         // Exibindo informações dos álbuns
         System.out.println("\n--- Informações dos Álbuns ---");
@@ -92,7 +93,7 @@ public class Main {
 
         // Demonstração de funcionalidades específicas
         System.out.println("\n--- Funcionalidades Específicas ---");
-        usuarioPremium.baixar("Música: Emoções");
+        usuarioPremium.baixar("Música: The Greatest");
         usuarioGratuito.ouvirAnuncio();
         usuarioFamilia.adicionarMembro();
         artista.publicarConteudo();
